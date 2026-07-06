@@ -2,6 +2,7 @@ package com.juiceybeans.ubergrowth;
 
 import com.juiceybeans.ubergrowth.init.UbergrowthBlocks;
 import com.juiceybeans.ubergrowth.init.UbergrowthCreativeTabs;
+import com.juiceybeans.ubergrowth.init.UbergrowthFuels;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -17,6 +18,7 @@ public class Ubergrowth implements ModInitializer {
 	public void onInitialize() {
         UbergrowthBlocks.initialize();
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Ubergrowth.id("ubergrowth_blocks"), UbergrowthCreativeTabs.UBERGROWTH_BLOCKS);
+        UbergrowthFuels.registerFuels();
 	}
 
 	public static ResourceLocation id(String path) {
