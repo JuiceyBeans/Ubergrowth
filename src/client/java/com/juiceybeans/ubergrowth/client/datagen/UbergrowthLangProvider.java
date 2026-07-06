@@ -19,7 +19,7 @@ public class UbergrowthLangProvider extends FabricLanguageProvider {
         builder.add("itemGroup.ubergrowth.ubergrowth_blocks", "Ubergrowth Blocks");
 
         for (Block block : UbergrowthBlocks.blocks) {
-            builder.add("item.ubergrowth." + BuiltInRegistries.BLOCK.getKey(block).getPath(), getLocalisedName(block));
+            builder.add("block.ubergrowth." + BuiltInRegistries.BLOCK.getKey(block).getPath(), getLocalisedName(block));
         }
     }
 
