@@ -131,6 +131,10 @@
   "block.ubergrowth.warped_hyphae": "Warped Hyphae",
   "block.ubergrowth.warped_nylium_smattering": "Warped Nylium Smattering",
   "block.ubergrowth.warped_vines": "Warped Vines",
+  "block.ubergrowth.waxed_copper_plating": "Waxed Copper Plating",
+  "block.ubergrowth.waxed_exposed_copper_plating": "Waxed Exposed Copper Plating",
+  "block.ubergrowth.waxed_oxidized_copper_plating": "Waxed Oxidized Copper Plating",
+  "block.ubergrowth.waxed_weathered_copper_plating": "Waxed Weathered Copper Plating",
   "block.ubergrowth.weathered_copper_plating": "Weathered Copper Plating",
   "itemGroup.ubergrowth.ubergrowth_blocks": "Ubergrowth Blocks"
 }

@@ -10,12 +10,12 @@ import net.minecraft.data.recipes.SingleItemRecipeBuilder;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 
+import java.util.function.Consumer;
+
 import static com.juiceybeans.ubergrowth.init.UbergrowthBlocks.*;
 import static com.juiceybeans.ubergrowth.init.UbergrowthBlocks.CRIMSON_HYPHAE;
 import static com.juiceybeans.ubergrowth.init.UbergrowthBlocks.WARPED_HYPHAE;
 import static net.minecraft.world.item.Items.*;
-
-import java.util.function.Consumer;
 
 public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
     public UbergrowthRecipeGenerator(FabricDataOutput output) {
@@ -185,6 +185,42 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(OXIDIZED_COPPER), RecipeCategory.BUILDING_BLOCKS, OXIDIZED_COPPER_PLATING, 8)
                 .unlockedBy("has_item", has(OXIDIZED_COPPER))
                 .save(writer, Ubergrowth.id("oxidized_copper_plating_from_stonecutter"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, WAXED_COPPER_PLATING, 16)
+                .requires(WAXED_COPPER_BLOCK, 2)
+                .unlockedBy("has_item", has(WAXED_COPPER_BLOCK))
+                .save(writer, Ubergrowth.id("waxed_copper_plating"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(WAXED_COPPER_BLOCK), RecipeCategory.BUILDING_BLOCKS, WAXED_COPPER_PLATING, 8)
+                .unlockedBy("has_item", has(WAXED_COPPER_BLOCK))
+                .save(writer, Ubergrowth.id("waxed_copper_plating_from_stonecutter"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, WAXED_EXPOSED_COPPER_PLATING, 16)
+                .requires(WAXED_EXPOSED_COPPER, 2)
+                .unlockedBy("has_item", has(WAXED_EXPOSED_COPPER))
+                .save(writer, Ubergrowth.id("waxed_exposed_copper_plating"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(EXPOSED_COPPER), RecipeCategory.BUILDING_BLOCKS, WAXED_EXPOSED_COPPER_PLATING, 8)
+                .unlockedBy("has_item", has(WAXED_EXPOSED_COPPER))
+                .save(writer, Ubergrowth.id("waxed_exposed_copper_plating_from_stonecutter"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, WAXED_WEATHERED_COPPER_PLATING, 16)
+                .requires(WAXED_WEATHERED_COPPER, 2)
+                .unlockedBy("has_item", has(WEATHERED_COPPER))
+                .save(writer, Ubergrowth.id("waxed_weathered_copper_plating"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(WAXED_WEATHERED_COPPER), RecipeCategory.BUILDING_BLOCKS, WAXED_WEATHERED_COPPER_PLATING, 8)
+                .unlockedBy("has_item", has(WAXED_WEATHERED_COPPER))
+                .save(writer, Ubergrowth.id("waxed_weathered_copper_plating_from_stonecutter"));
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, WAXED_OXIDIZED_COPPER_PLATING, 16)
+                .requires(WAXED_OXIDIZED_COPPER, 2)
+                .unlockedBy("has_item", has(WAXED_OXIDIZED_COPPER))
+                .save(writer, Ubergrowth.id("waxed_oxidized_copper_plating"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(WAXED_OXIDIZED_COPPER), RecipeCategory.BUILDING_BLOCKS, WAXED_OXIDIZED_COPPER_PLATING, 8)
+                .unlockedBy("has_item", has(WAXED_OXIDIZED_COPPER))
+                .save(writer, Ubergrowth.id("waxed_oxidized_copper_plating_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, GOLD_PLATING, 16)
                 .requires(GOLD_BLOCK, 2)

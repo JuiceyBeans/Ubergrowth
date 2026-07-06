@@ -2,6 +2,7 @@ package com.juiceybeans.ubergrowth.init;
 
 import com.juiceybeans.ubergrowth.Ubergrowth;
 import com.juiceybeans.ubergrowth.block.BaseUbergrowthBlock;
+import com.juiceybeans.ubergrowth.block.CopperUbergrowthBlock;
 import com.juiceybeans.ubergrowth.block.WaterloggableUbergrowthBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -9,6 +10,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.WeatheringCopper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,10 +42,14 @@ public class UbergrowthBlocks {
     public static final Block QUARTZ_BRICK_CHUNKS = registerBlock("quartz_brick_chunks", new WaterloggableUbergrowthBlock(FabricBlockSettings.of()));
     public static final Block ENDSTONE_BRICK_CHUNKS = registerBlock("endstone_brick_chunks", new WaterloggableUbergrowthBlock(FabricBlockSettings.of()));
     public static final Block PURPUR_CHUNKS = registerBlock("purpur_chunks", new WaterloggableUbergrowthBlock(FabricBlockSettings.of()));
-    public static final Block COPPER_PLATING = registerBlock("copper_plating", new WaterloggableUbergrowthBlock(FabricBlockSettings.of()));
-    public static final Block EXPOSED_COPPER_PLATING = registerBlock("exposed_copper_plating", new WaterloggableUbergrowthBlock(FabricBlockSettings.of()));
-    public static final Block WEATHERED_COPPER_PLATING = registerBlock("weathered_copper_plating", new WaterloggableUbergrowthBlock(FabricBlockSettings.of()));
-    public static final Block OXIDIZED_COPPER_PLATING = registerBlock("oxidized_copper_plating", new WaterloggableUbergrowthBlock(FabricBlockSettings.of()));
+    public static final Block COPPER_PLATING = registerBlock("copper_plating", new CopperUbergrowthBlock(FabricBlockSettings.of(), WeatheringCopper.WeatherState.UNAFFECTED));
+    public static final Block EXPOSED_COPPER_PLATING = registerBlock("exposed_copper_plating", new CopperUbergrowthBlock(FabricBlockSettings.of(), WeatheringCopper.WeatherState.EXPOSED));
+    public static final Block WEATHERED_COPPER_PLATING = registerBlock("weathered_copper_plating", new CopperUbergrowthBlock(FabricBlockSettings.of(), WeatheringCopper.WeatherState.WEATHERED));
+    public static final Block OXIDIZED_COPPER_PLATING = registerBlock("oxidized_copper_plating", new CopperUbergrowthBlock(FabricBlockSettings.of(), WeatheringCopper.WeatherState.OXIDIZED));
+    public static final Block WAXED_COPPER_PLATING = registerBlock("waxed_copper_plating", new CopperUbergrowthBlock(FabricBlockSettings.of(), WeatheringCopper.WeatherState.UNAFFECTED));
+    public static final Block WAXED_EXPOSED_COPPER_PLATING = registerBlock("waxed_exposed_copper_plating", new CopperUbergrowthBlock(FabricBlockSettings.of(), WeatheringCopper.WeatherState.EXPOSED));
+    public static final Block WAXED_WEATHERED_COPPER_PLATING = registerBlock("waxed_weathered_copper_plating", new CopperUbergrowthBlock(FabricBlockSettings.of(), WeatheringCopper.WeatherState.WEATHERED));
+    public static final Block WAXED_OXIDIZED_COPPER_PLATING = registerBlock("waxed_oxidized_copper_plating", new CopperUbergrowthBlock(FabricBlockSettings.of(), WeatheringCopper.WeatherState.OXIDIZED));
     public static final Block GOLD_PLATING = registerBlock("gold_plating", new WaterloggableUbergrowthBlock(FabricBlockSettings.of()));
     public static final Block IRON_PLATING = registerBlock("iron_plating", new WaterloggableUbergrowthBlock(FabricBlockSettings.of()));
     public static final Block NETHERITE_PLATING = registerBlock("netherite_plating", new WaterloggableUbergrowthBlock(FabricBlockSettings.of()));
