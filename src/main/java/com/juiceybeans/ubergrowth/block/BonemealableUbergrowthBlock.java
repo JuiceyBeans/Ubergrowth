@@ -10,15 +10,11 @@ import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class BonemealableUbergrowthBlock extends WaterloggableUbergrowthBlock implements BonemealableBlock {
-    Block bonemealedBlock;
+    private final Block bonemealedBlock;
 
     public BonemealableUbergrowthBlock(Properties properties, Block bonemealedBlock) {
         super(properties);
         this.bonemealedBlock = bonemealedBlock;
-    }
-
-    public BonemealableUbergrowthBlock(Properties properties, boolean isWaterloggable) {
-        super(properties, isWaterloggable);
     }
 
     @Override
