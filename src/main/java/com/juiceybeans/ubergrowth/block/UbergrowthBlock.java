@@ -5,7 +5,7 @@ import net.minecraft.world.level.block.MultifaceSpreader;
 
 public class UbergrowthBlock extends MultifaceBlock {
     public UbergrowthBlock(Properties properties) {
-        super(properties);
+        super(properties.noOcclusion());
     }
 
     @Override
