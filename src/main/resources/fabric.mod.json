@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "ubergrowth",
+	"version": "${version}",
+	"name": "Ubergrowth",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ubergrowth/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.juiceybeans.ubergrowth.Ubergrowth"
+		],
+		"client": [
+			"com.juiceybeans.ubergrowth.client.UbergrowthClient"
+		],
+		"fabric-datagen": [
+			"com.juiceybeans.ubergrowth.client.UbergrowthDataGenerator"
+		]
+	},
+	"mixins": [
+		"ubergrowth.mixins.json",
+		{
+			"config": "ubergrowth.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
