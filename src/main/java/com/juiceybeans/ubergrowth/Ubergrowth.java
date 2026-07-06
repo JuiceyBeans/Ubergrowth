@@ -1,6 +1,7 @@
 package com.juiceybeans.ubergrowth;
 
 import com.juiceybeans.ubergrowth.init.UbergrowthBlocks;
+import com.juiceybeans.ubergrowth.init.UbergrowthCompostables;
 import com.juiceybeans.ubergrowth.init.UbergrowthCreativeTabs;
 import com.juiceybeans.ubergrowth.init.UbergrowthFuels;
 import net.fabricmc.api.ModInitializer;
@@ -19,6 +20,7 @@ public class Ubergrowth implements ModInitializer {
         UbergrowthBlocks.initialize();
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Ubergrowth.id("ubergrowth_blocks"), UbergrowthCreativeTabs.UBERGROWTH_BLOCKS);
         UbergrowthFuels.registerFuels();
+        UbergrowthCompostables.registerCompostables();
 	}
 
 	public static ResourceLocation id(String path) {
