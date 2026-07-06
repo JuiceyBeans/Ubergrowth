@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "ubergrowth",
 	"version": "${version}",
-	"name": "Ubergrowth",
+	"name": "Ubergrowth+",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"JuiceyBeans"
