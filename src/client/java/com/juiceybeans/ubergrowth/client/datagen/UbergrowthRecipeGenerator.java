@@ -58,7 +58,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(STONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, STONE_BRICK_CHUNKS, 2)
                 .unlockedBy("has_item", has(STONE_BRICKS))
-                .save(writer, Ubergrowth.id("stone_brick_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("stone_brick_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, MOSSY_STONE_BRICK_CHUNKS, 4)
                 .requires(MOSSY_STONE_BRICKS, 2)
@@ -67,7 +67,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(MOSSY_STONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, MOSSY_STONE_BRICK_CHUNKS, 2)
                 .unlockedBy("has_item", has(MOSSY_STONE_BRICKS))
-                .save(writer, Ubergrowth.id("mossy_stone_brick_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("mossy_stone_brick_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, BRICK_CHUNKS, 4)
                 .requires(BRICKS, 2)
@@ -76,7 +76,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(BRICKS), RecipeCategory.BUILDING_BLOCKS, BRICK_CHUNKS, 2)
                 .unlockedBy("has_item", has(BRICKS))
-                .save(writer, Ubergrowth.id("brick_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("brick_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, MUD_BRICK_CHUNKS, 4)
                 .requires(MUD_BRICKS, 2)
@@ -85,7 +85,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(MUD_BRICKS), RecipeCategory.BUILDING_BLOCKS, MUD_BRICK_CHUNKS, 2)
                 .unlockedBy("has_item", has(MUD_BRICKS))
-                .save(writer, Ubergrowth.id("mud_brick_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("mud_brick_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, DEEPSLATE_BRICK_CHUNKS, 4)
                 .requires(DEEPSLATE_BRICKS, 2)
@@ -94,7 +94,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(DEEPSLATE_BRICKS), RecipeCategory.BUILDING_BLOCKS, DEEPSLATE_BRICK_CHUNKS, 2)
                 .unlockedBy("has_item", has(DEEPSLATE_BRICKS))
-                .save(writer, Ubergrowth.id("deepslate_brick_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("deepslate_brick_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, BLACKSTONE_BRICK_CHUNKS, 4)
                 .requires(POLISHED_BLACKSTONE_BRICKS, 2)
@@ -103,7 +103,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(POLISHED_BLACKSTONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, BLACKSTONE_BRICK_CHUNKS, 2)
                 .unlockedBy("has_item", has(POLISHED_BLACKSTONE_BRICKS))
-                .save(writer, Ubergrowth.id("blackstone_brick_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("blackstone_brick_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, NETHERWART_BRICK_CHUNKS, 4)
                 .requires(RED_NETHER_BRICKS, 2)
@@ -112,7 +112,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(RED_NETHER_BRICKS), RecipeCategory.BUILDING_BLOCKS, NETHERWART_BRICK_CHUNKS, 2)
                 .unlockedBy("has_item", has(RED_NETHER_BRICKS))
-                .save(writer, Ubergrowth.id("netherwart_brick_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("netherwart_brick_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, NETHER_BRICK_CHUNKS, 4)
                 .requires(NETHER_BRICKS, 2)
@@ -121,7 +121,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(NETHER_BRICKS), RecipeCategory.BUILDING_BLOCKS, NETHER_BRICK_CHUNKS, 2)
                 .unlockedBy("has_item", has(NETHER_BRICKS))
-                .save(writer, Ubergrowth.id("nether_brick_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("nether_brick_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, QUARTZ_BRICK_CHUNKS, 4)
                 .requires(QUARTZ_BRICKS, 2)
@@ -130,7 +130,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(QUARTZ_BRICKS), RecipeCategory.BUILDING_BLOCKS, QUARTZ_BRICK_CHUNKS, 2)
                 .unlockedBy("has_item", has(QUARTZ_BRICKS))
-                .save(writer, Ubergrowth.id("quartz_brick_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("quartz_brick_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ENDSTONE_BRICK_CHUNKS, 4)
                 .requires(END_STONE_BRICKS, 2)
@@ -139,7 +139,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(END_STONE_BRICKS), RecipeCategory.BUILDING_BLOCKS, ENDSTONE_BRICK_CHUNKS, 2)
                 .unlockedBy("has_item", has(END_STONE_BRICKS))
-                .save(writer, Ubergrowth.id("endstone_brick_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("endstone_brick_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, PURPUR_CHUNKS, 4)
                 .requires(PURPUR_BLOCK, 2)
@@ -148,7 +148,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(PURPUR_BLOCK), RecipeCategory.BUILDING_BLOCKS, PURPUR_CHUNKS, 2)
                 .unlockedBy("has_item", has(PURPUR_BLOCK))
-                .save(writer, Ubergrowth.id("purpur_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("purpur_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, COPPER_PLATING, 16)
                 .requires(COPPER_BLOCK, 2)
@@ -157,7 +157,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(COPPER_BLOCK), RecipeCategory.BUILDING_BLOCKS, COPPER_PLATING, 8)
                 .unlockedBy("has_item", has(COPPER_BLOCK))
-                .save(writer, Ubergrowth.id("copper_plating_stonecutter"));
+                .save(writer, Ubergrowth.id("copper_plating_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, EXPOSED_COPPER_PLATING, 16)
                 .requires(EXPOSED_COPPER, 2)
@@ -166,7 +166,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(EXPOSED_COPPER), RecipeCategory.BUILDING_BLOCKS, EXPOSED_COPPER_PLATING, 8)
                 .unlockedBy("has_item", has(EXPOSED_COPPER))
-                .save(writer, Ubergrowth.id("exposed_copper_plating_stonecutter"));
+                .save(writer, Ubergrowth.id("exposed_copper_plating_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, WEATHERED_COPPER_PLATING, 16)
                 .requires(WEATHERED_COPPER, 2)
@@ -175,7 +175,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(WEATHERED_COPPER), RecipeCategory.BUILDING_BLOCKS, WEATHERED_COPPER_PLATING, 8)
                 .unlockedBy("has_item", has(WEATHERED_COPPER))
-                .save(writer, Ubergrowth.id("weathered_copper_plating_stonecutter"));
+                .save(writer, Ubergrowth.id("weathered_copper_plating_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, OXIDIZED_COPPER_PLATING, 16)
                 .requires(OXIDIZED_COPPER, 2)
@@ -184,7 +184,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(OXIDIZED_COPPER), RecipeCategory.BUILDING_BLOCKS, OXIDIZED_COPPER_PLATING, 8)
                 .unlockedBy("has_item", has(OXIDIZED_COPPER))
-                .save(writer, Ubergrowth.id("oxidized_copper_plating_stonecutter"));
+                .save(writer, Ubergrowth.id("oxidized_copper_plating_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, GOLD_PLATING, 16)
                 .requires(GOLD_BLOCK, 2)
@@ -193,7 +193,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(GOLD_BLOCK), RecipeCategory.BUILDING_BLOCKS, GOLD_PLATING, 8)
                 .unlockedBy("has_item", has(GOLD_BLOCK))
-                .save(writer, Ubergrowth.id("gold_plating_stonecutter"));
+                .save(writer, Ubergrowth.id("gold_plating_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, IRON_PLATING, 16)
                 .requires(IRON_BLOCK, 2)
@@ -202,7 +202,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(IRON_BLOCK), RecipeCategory.BUILDING_BLOCKS, IRON_PLATING, 8)
                 .unlockedBy("has_item", has(IRON_BLOCK))
-                .save(writer, Ubergrowth.id("iron_plating_stonecutter"));
+                .save(writer, Ubergrowth.id("iron_plating_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, NETHERITE_PLATING, 16)
                 .requires(NETHERITE_BLOCK, 2)
@@ -211,7 +211,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(NETHERITE_BLOCK), RecipeCategory.BUILDING_BLOCKS, NETHERITE_PLATING, 8)
                 .unlockedBy("has_item", has(NETHERITE_BLOCK))
-                .save(writer, Ubergrowth.id("netherite_plating_stonecutter"));
+                .save(writer, Ubergrowth.id("netherite_plating_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COPPER_ORE_FRAGMENTS, 16)
                 .requires(COPPER_ORE, 2)
@@ -220,7 +220,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(COPPER_ORE), RecipeCategory.MISC, COPPER_ORE_FRAGMENTS, 8)
                 .unlockedBy("has_item", has(COPPER_ORE))
-                .save(writer, Ubergrowth.id("copper_ore_fragments_stonecutter"));
+                .save(writer, Ubergrowth.id("copper_ore_fragments_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, IRON_ORE_FRAGMENTS, 16)
                 .requires(IRON_ORE, 2)
@@ -229,7 +229,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(IRON_ORE), RecipeCategory.MISC, IRON_ORE_FRAGMENTS, 8)
                 .unlockedBy("has_item", has(IRON_ORE))
-                .save(writer, Ubergrowth.id("iron_ore_fragments_stonecutter"));
+                .save(writer, Ubergrowth.id("iron_ore_fragments_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, GOLD_ORE_FRAGMENTS, 16)
                 .requires(GOLD_ORE, 2)
@@ -238,7 +238,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(GOLD_ORE), RecipeCategory.MISC, GOLD_ORE_FRAGMENTS, 8)
                 .unlockedBy("has_item", has(GOLD_ORE))
-                .save(writer, Ubergrowth.id("gold_ore_fragments_stonecutter"));
+                .save(writer, Ubergrowth.id("gold_ore_fragments_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, NETHER_QUARTZ_FRAGMENTS, 8)
                 .requires(QUARTZ_BLOCK, 2)
@@ -247,7 +247,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(QUARTZ_BLOCK), RecipeCategory.MISC, NETHER_QUARTZ_FRAGMENTS, 4)
                 .unlockedBy("has_item", has(QUARTZ_BLOCK))
-                .save(writer, Ubergrowth.id("nether_quartz_fragments_stonecutter"));
+                .save(writer, Ubergrowth.id("nether_quartz_fragments_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, EMERALD_FRAGMENTS, 16)
                 .requires(EMERALD_BLOCK, 2)
@@ -256,7 +256,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(EMERALD_BLOCK), RecipeCategory.MISC, EMERALD_FRAGMENTS, 8)
                 .unlockedBy("has_item", has(EMERALD_BLOCK))
-                .save(writer, Ubergrowth.id("emerald_fragments_stonecutter"));
+                .save(writer, Ubergrowth.id("emerald_fragments_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, DIAMOND_FRAGMENTS, 16)
                 .requires(DIAMOND_BLOCK, 2)
@@ -265,7 +265,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(DIAMOND_BLOCK), RecipeCategory.MISC, DIAMOND_FRAGMENTS, 8)
                 .unlockedBy("has_item", has(DIAMOND_BLOCK))
-                .save(writer, Ubergrowth.id("diamond_fragments_stonecutter"));
+                .save(writer, Ubergrowth.id("diamond_fragments_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COAL_FRAGMENTS, 16)
                 .requires(COAL_BLOCK, 2)
@@ -274,7 +274,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(COAL_BLOCK), RecipeCategory.MISC, COAL_FRAGMENTS, 8)
                 .unlockedBy("has_item", has(COAL_BLOCK))
-                .save(writer, Ubergrowth.id("coal_fragments_stonecutter"));
+                .save(writer, Ubergrowth.id("coal_fragments_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, REDSTONE_FRAGMENTS, 16)
                 .requires(REDSTONE_BLOCK, 2)
@@ -283,7 +283,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(REDSTONE_BLOCK), RecipeCategory.MISC, REDSTONE_FRAGMENTS, 8)
                 .unlockedBy("has_item", has(REDSTONE_BLOCK))
-                .save(writer, Ubergrowth.id("redstone_fragments_stonecutter"));
+                .save(writer, Ubergrowth.id("redstone_fragments_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, LAPIS_LAZULI_FRAGMENTS, 16)
                 .requires(LAPIS_BLOCK, 2)
@@ -292,7 +292,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(LAPIS_BLOCK), RecipeCategory.MISC, LAPIS_LAZULI_FRAGMENTS, 8)
                 .unlockedBy("has_item", has(LAPIS_BLOCK))
-                .save(writer, Ubergrowth.id("lapis_lazuli_fragments_stonecutter"));
+                .save(writer, Ubergrowth.id("lapis_lazuli_fragments_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, MOSSY_COBBLESTONE_CHUNKS, 4)
                 .requires(MOSSY_COBBLESTONE, 2)
@@ -301,7 +301,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(MOSSY_COBBLESTONE), RecipeCategory.BUILDING_BLOCKS, MOSSY_COBBLESTONE_CHUNKS, 2)
                 .unlockedBy("has_item", has(MOSSY_COBBLESTONE))
-                .save(writer, Ubergrowth.id("mossy_cobblestone_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("mossy_cobblestone_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, COBBLESTONE_CHUNKS, 4)
                 .requires(COBBLESTONE, 2)
@@ -310,7 +310,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(COBBLESTONE), RecipeCategory.BUILDING_BLOCKS, COBBLESTONE_CHUNKS, 2)
                 .unlockedBy("has_item", has(COBBLESTONE))
-                .save(writer, Ubergrowth.id("cobblestone_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("cobblestone_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, PRISMARINE_CHUNKS, 4)
                 .requires(PRISMARINE, 2)
@@ -319,7 +319,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(PRISMARINE), RecipeCategory.BUILDING_BLOCKS, PRISMARINE_CHUNKS, 2)
                 .unlockedBy("has_item", has(PRISMARINE))
-                .save(writer, Ubergrowth.id("prismarine_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("prismarine_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, SANDSTONE_CHUNKS, 4)
                 .requires(SANDSTONE, 2)
@@ -328,7 +328,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(SANDSTONE), RecipeCategory.BUILDING_BLOCKS, SANDSTONE_CHUNKS, 2)
                 .unlockedBy("has_item", has(SANDSTONE))
-                .save(writer, Ubergrowth.id("sandstone_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("sandstone_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, RED_SANDSTONE_CHUNKS, 4)
                 .requires(RED_SANDSTONE, 2)
@@ -337,7 +337,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(RED_SANDSTONE), RecipeCategory.BUILDING_BLOCKS, RED_SANDSTONE_CHUNKS, 2)
                 .unlockedBy("has_item", has(RED_SANDSTONE))
-                .save(writer, Ubergrowth.id("red_sandstone_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("red_sandstone_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ENDSTONE_CHUNKS, 4)
                 .requires(END_STONE, 2)
@@ -346,7 +346,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(END_STONE), RecipeCategory.BUILDING_BLOCKS, ENDSTONE_CHUNKS, 2)
                 .unlockedBy("has_item", has(END_STONE))
-                .save(writer, Ubergrowth.id("endstone_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("endstone_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, DIORITE_CHUNKS, 4)
                 .requires(DIORITE, 2)
@@ -355,7 +355,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(DIORITE), RecipeCategory.BUILDING_BLOCKS, DIORITE_CHUNKS, 2)
                 .unlockedBy("has_item", has(DIORITE))
-                .save(writer, Ubergrowth.id("diorite_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("diorite_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, GRANITE_CHUNKS, 4)
                 .requires(GRANITE, 2)
@@ -364,7 +364,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(GRANITE), RecipeCategory.BUILDING_BLOCKS, GRANITE_CHUNKS, 2)
                 .unlockedBy("has_item", has(GRANITE))
-                .save(writer, Ubergrowth.id("granite_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("granite_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ANDESITE_CHUNKS, 4)
                 .requires(ANDESITE, 2)
@@ -373,7 +373,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(ANDESITE), RecipeCategory.BUILDING_BLOCKS, ANDESITE_CHUNKS, 2)
                 .unlockedBy("has_item", has(ANDESITE))
-                .save(writer, Ubergrowth.id("andesite_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("andesite_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, NETHERRACK_CHUNKS, 4)
                 .requires(NETHERRACK, 2)
@@ -382,7 +382,7 @@ public class UbergrowthRecipeGenerator extends FabricRecipeProvider {
 
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(NETHERRACK), RecipeCategory.BUILDING_BLOCKS, NETHERRACK_CHUNKS, 2)
                 .unlockedBy("has_item", has(NETHERRACK))
-                .save(writer, Ubergrowth.id("netherrack_chunks_stonecutter"));
+                .save(writer, Ubergrowth.id("netherrack_chunks_from_stonecutter"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, DIRT_SMATTERING, 4)
                 .requires(DIRT, 2)
