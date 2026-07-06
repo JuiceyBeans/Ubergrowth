@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ubergrowth:block/deepslate_brick_chunks"
+  }
+}

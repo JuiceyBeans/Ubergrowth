@@ -1,0 +1,6 @@
+{
+  "parent": "ubergrowth:block/ubergrowth_multiface",
+  "textures": {
+    "texture": "ubergrowth:block/splayed_leather"
+  }
+}
