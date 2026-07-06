@@ -1,8 +1,8 @@
 {
   "ambientocclusion": false,
   "textures": {
-    "particle": "block/texture",
-    "texture": "block/texture"
+    "particle": "#texture",
+    "texture": "#texture"
   },
   "elements": [
     {
