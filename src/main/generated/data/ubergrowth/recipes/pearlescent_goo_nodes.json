@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:pearlescent_froglight"
+    },
+    {
+      "item": "minecraft:pearlescent_froglight"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "ubergrowth:pearlescent_goo_nodes"
+  }
+}

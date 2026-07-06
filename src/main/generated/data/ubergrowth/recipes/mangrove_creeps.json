@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:mangrove_wood"
+    },
+    {
+      "item": "minecraft:mangrove_wood"
+    }
+  ],
+  "result": {
+    "item": "ubergrowth:mangrove_creeps"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ubergrowth:dead_creeps"
+    },
+    {
+      "item": "ubergrowth:dead_creeps"
+    },
+    {
+      "item": "ubergrowth:dead_creeps"
+    },
+    {
+      "item": "minecraft:soul_sand"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "ubergrowth:archaic_creeps"
+  }
+}

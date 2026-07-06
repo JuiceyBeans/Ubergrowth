@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:mud_bricks"
+    },
+    {
+      "item": "minecraft:mud_bricks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "ubergrowth:mud_brick_chunks"
+  }
+}

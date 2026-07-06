@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:verdant_froglight"
+    },
+    {
+      "item": "minecraft:verdant_froglight"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "ubergrowth:verdant_goo_nodes"
+  }
+}

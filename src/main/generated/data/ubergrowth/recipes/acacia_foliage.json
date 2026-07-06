@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:acacia_leaves"
+    },
+    {
+      "item": "minecraft:acacia_leaves"
+    },
+    {
+      "item": "minecraft:acacia_leaves"
+    }
+  ],
+  "result": {
+    "item": "ubergrowth:acacia_foliage"
+  }
+}

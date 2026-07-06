@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 8,
+  "ingredient": {
+    "item": "minecraft:emerald_block"
+  },
+  "result": "ubergrowth:emerald_fragments"
+}

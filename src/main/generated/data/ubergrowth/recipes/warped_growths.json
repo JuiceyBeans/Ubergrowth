@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_sprouts"
+    },
+    {
+      "item": "minecraft:nether_sprouts"
+    },
+    {
+      "item": "minecraft:nether_sprouts"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "ubergrowth:warped_growths"
+  }
+}

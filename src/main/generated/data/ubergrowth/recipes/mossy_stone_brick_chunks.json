@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:mossy_stone_bricks"
+    },
+    {
+      "item": "minecraft:mossy_stone_bricks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "ubergrowth:mossy_stone_brick_chunks"
+  }
+}

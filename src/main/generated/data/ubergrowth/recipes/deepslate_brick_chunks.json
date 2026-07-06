@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:deepslate_bricks"
+    },
+    {
+      "item": "minecraft:deepslate_bricks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "ubergrowth:deepslate_brick_chunks"
+  }
+}
