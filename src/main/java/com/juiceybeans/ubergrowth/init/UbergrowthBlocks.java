@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.WeatheringCopper;
 
@@ -99,9 +100,9 @@ public class UbergrowthBlocks {
     public static final Block ARCHAIC_CREEPS = registerBlock("archaic_creeps", new SpreadableUbergrowthBlock(FabricBlockSettings.of().burnable()));
     public static final Block ROOT_CREEPS = registerBlock("root_creeps", new SpreadableUbergrowthBlock(FabricBlockSettings.of().burnable()));
     public static final Block MYCELIUM_HYPHAE = registerBlock("mycelium_hyphae", new SpreadableUbergrowthBlock(FabricBlockSettings.of().burnable()));
-    public static final Block BUDDING_CRIMSON_HYPHAE = registerBlock("budding_crimson_hyphae", new SpreadableUbergrowthBlock(FabricBlockSettings.of()));
+    public static final Block BUDDING_CRIMSON_HYPHAE = registerBlock("budding_crimson_hyphae", new BuddingHyphaeUbergrowthBlock(FabricBlockSettings.of(), Items.CRIMSON_FUNGUS.getDefaultInstance()));
     public static final Block CRIMSON_HYPHAE = registerBlock("crimson_hyphae", new BonemealableUbergrowthBlock(FabricBlockSettings.of(), BUDDING_CRIMSON_HYPHAE));
-    public static final Block BUDDING_WARPED_HYPHAE = registerBlock("budding_warped_hyphae", new SpreadableUbergrowthBlock(FabricBlockSettings.of()));
+    public static final Block BUDDING_WARPED_HYPHAE = registerBlock("budding_warped_hyphae", new BuddingHyphaeUbergrowthBlock(FabricBlockSettings.of(), Items.WARPED_FUNGUS.getDefaultInstance()));
     public static final Block WARPED_HYPHAE = registerBlock("warped_hyphae", new BonemealableUbergrowthBlock(FabricBlockSettings.of(), BUDDING_WARPED_HYPHAE));
     public static final Block OAK_FOLIAGE = registerBlock("oak_foliage", new BaseUbergrowthBlock(FabricBlockSettings.of().burnable()));
     public static final Block SPRUCE_FOLIAGE = registerBlock("spruce_foliage", new BaseUbergrowthBlock(FabricBlockSettings.of().burnable()));
@@ -174,5 +175,8 @@ public class UbergrowthBlocks {
         ((SpreadableUbergrowthBlock) OCHRE_GOO_NODES).setSpreadBlock((BaseUbergrowthBlock) OCHRE_GOO_HYPHAE);
         ((SpreadableUbergrowthBlock) PEARLESCENT_GOO_NODES).setSpreadBlock((BaseUbergrowthBlock) PEARLESCENT_GOO_HYPHAE);
         ((SpreadableUbergrowthBlock) VERDANT_GOO_NODES).setSpreadBlock((BaseUbergrowthBlock) VERDANT_GOO_HYPHAE);
+
+        ((BuddingHyphaeUbergrowthBlock) BUDDING_CRIMSON_HYPHAE).setStrippedBlock(CRIMSON_HYPHAE);
+        ((BuddingHyphaeUbergrowthBlock) BUDDING_WARPED_HYPHAE).setStrippedBlock(WARPED_HYPHAE);
     }
 }
