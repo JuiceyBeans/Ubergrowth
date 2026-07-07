@@ -163,11 +163,7 @@ public class TackedNotesBlock extends BaseEntityBlock {
 
     @Override
     public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor level, BlockPos pos, BlockPos neighborPos) {
-        if (!hasAnyFace(state)) {
-            return Blocks.AIR.defaultBlockState();
-        } else {
-            return hasFace(state, direction) && !canAttachTo(level, direction, neighborPos, neighborState) ? removeFace(state, getFaceProperty(direction)) : state;
-        }
+        return state;
     }
 
     @Override
@@ -196,6 +192,19 @@ public class TackedNotesBlock extends BaseEntityBlock {
     @Override
     public boolean canBeReplaced(BlockState state, BlockPlaceContext useContext) {
         return hasAnyVacantFace(state);
+    }
+
+    @Override
+    public void neighborChanged(BlockState state, Level level, BlockPos pos, Block neighborBlock, BlockPos neighborPos, boolean movedByPiston) {
+        for (Direction direction : DIRECTIONS) {
+            if (hasFace(state, direction)) {
+                BlockPos neighbor = pos.relative(direction);
+                if (!canAttachTo(level, direction, neighbor, level.getBlockState(neighbor))) {
+                    level.destroyBlock(pos, true);
+                    return;
+                }
+            }
+        }
     }
 
     @Nullable
