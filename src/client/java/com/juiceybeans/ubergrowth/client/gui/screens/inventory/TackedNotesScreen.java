@@ -1,6 +1,7 @@
 package com.juiceybeans.ubergrowth.client.gui.screens.inventory;
 
 import com.google.common.collect.Lists;
+import com.juiceybeans.ubergrowth.Ubergrowth;
 import com.juiceybeans.ubergrowth.block.blockentity.TackedNotesBlockEntity;
 import com.juiceybeans.ubergrowth.menu.TackedNotesMenu;
 import com.juiceybeans.ubergrowth.network.UbergrowthNetworking;
@@ -18,13 +19,13 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.font.TextFieldHelper;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.client.gui.screens.inventory.BookViewScreen;
 import net.minecraft.client.gui.screens.inventory.MenuAccess;
 import net.minecraft.client.renderer.Rect2i;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.CommonComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.mutable.MutableBoolean;
@@ -35,6 +36,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class TackedNotesScreen extends Screen implements MenuAccess<TackedNotesMenu> {
+    public static final ResourceLocation NOTE_LOCATION = Ubergrowth.id("textures/gui/tacked_notes.png");
     private static final int TEXT_WIDTH = 114;
     private static final int IMAGE_WIDTH = 192;
     private static final int IMAGE_HEIGHT = 192;
@@ -260,7 +262,7 @@ public class TackedNotesScreen extends Screen implements MenuAccess<TackedNotesM
         this.renderBackground(guiGraphics);
         int i = (this.width - 192) / 2;
 
-        guiGraphics.blit(BookViewScreen.BOOK_LOCATION, i, 2, 0, 0, IMAGE_WIDTH, IMAGE_HEIGHT);
+        guiGraphics.blit(NOTE_LOCATION, i, 2, 0, 0, IMAGE_WIDTH, IMAGE_HEIGHT);
 
         DisplayCache displayCache = this.getDisplayCache();
         for (LineInfo lineInfo : displayCache.lines) {
