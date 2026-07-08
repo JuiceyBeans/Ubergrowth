@@ -1,5 +1,91 @@
 {
   "type": "minecraft:block",
+  "functions": [
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:tacked_paper",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "down": "true"
+          }
+        }
+      ],
+      "count": 2.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:tacked_paper",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "up": "true"
+          }
+        }
+      ],
+      "count": 2.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:tacked_paper",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "north": "true"
+          }
+        }
+      ],
+      "count": 2.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:tacked_paper",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "south": "true"
+          }
+        }
+      ],
+      "count": 2.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:tacked_paper",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "west": "true"
+          }
+        }
+      ],
+      "count": 2.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:tacked_paper",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "east": "true"
+          }
+        }
+      ],
+      "count": 2.0,
+      "function": "minecraft:set_count"
+    }
+  ],
   "pools": [
     {
       "bonus_rolls": 0.0,
@@ -17,7 +103,7 @@
       "functions": [
         {
           "add": false,
-          "count": 2.0,
+          "count": 0.0,
           "function": "minecraft:set_count"
         }
       ],

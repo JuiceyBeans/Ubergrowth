@@ -1,13 +1,119 @@
 {
   "type": "minecraft:block",
+  "functions": [
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:gravel_smattering",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "down": "true"
+          }
+        },
+        {
+          "chance": 0.1,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "count": 1.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:gravel_smattering",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "up": "true"
+          }
+        },
+        {
+          "chance": 0.1,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "count": 1.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:gravel_smattering",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "north": "true"
+          }
+        },
+        {
+          "chance": 0.1,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "count": 1.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:gravel_smattering",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "south": "true"
+          }
+        },
+        {
+          "chance": 0.1,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "count": 1.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:gravel_smattering",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "west": "true"
+          }
+        },
+        {
+          "chance": 0.1,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "count": 1.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:gravel_smattering",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "east": "true"
+          }
+        },
+        {
+          "chance": 0.1,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "count": 1.0,
+      "function": "minecraft:set_count"
+    }
+  ],
   "pools": [
     {
       "bonus_rolls": 0.0,
       "conditions": [
-        {
-          "chance": 0.1,
-          "condition": "minecraft:random_chance"
-        },
         {
           "condition": "minecraft:survives_explosion"
         }
@@ -16,6 +122,13 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:flint"
+        }
+      ],
+      "functions": [
+        {
+          "add": false,
+          "count": 0.0,
+          "function": "minecraft:set_count"
         }
       ],
       "rolls": 1.0

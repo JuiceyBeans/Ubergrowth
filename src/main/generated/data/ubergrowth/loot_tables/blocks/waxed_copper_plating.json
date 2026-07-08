@@ -1,5 +1,91 @@
 {
   "type": "minecraft:block",
+  "functions": [
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:waxed_copper_plating",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "down": "true"
+          }
+        }
+      ],
+      "count": 1.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:waxed_copper_plating",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "up": "true"
+          }
+        }
+      ],
+      "count": 1.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:waxed_copper_plating",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "north": "true"
+          }
+        }
+      ],
+      "count": 1.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:waxed_copper_plating",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "south": "true"
+          }
+        }
+      ],
+      "count": 1.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:waxed_copper_plating",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "west": "true"
+          }
+        }
+      ],
+      "count": 1.0,
+      "function": "minecraft:set_count"
+    },
+    {
+      "add": true,
+      "conditions": [
+        {
+          "block": "ubergrowth:waxed_copper_plating",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "east": "true"
+          }
+        }
+      ],
+      "count": 1.0,
+      "function": "minecraft:set_count"
+    }
+  ],
   "pools": [
     {
       "bonus_rolls": 0.0,
@@ -12,6 +98,13 @@
         {
           "type": "minecraft:item",
           "name": "ubergrowth:waxed_copper_plating"
+        }
+      ],
+      "functions": [
+        {
+          "add": false,
+          "count": 0.0,
+          "function": "minecraft:set_count"
         }
       ],
       "rolls": 1.0
