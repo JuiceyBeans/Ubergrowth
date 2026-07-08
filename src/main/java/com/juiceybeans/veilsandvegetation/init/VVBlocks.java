@@ -4,6 +4,9 @@ import com.juiceybeans.veilsandvegetation.VeilsAndVegetation;
 import com.juiceybeans.veilsandvegetation.block.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
+import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.BlockItem;
@@ -183,5 +186,90 @@ public class VVBlocks {
         ((FruitingHyphaeVVBlock) BUDDING_WARPED_VINES).setShearedBlock(WARPED_VINES);
         ((FruitingHyphaeVVBlock) FRUITING_RED_HYPHAE).setShearedBlock(RED_HYPHAE);
         ((FruitingHyphaeVVBlock) FRUITING_BROWN_HYPHAE).setShearedBlock(BROWN_HYPHAE);
+        
+        registerCompostables();
+        registerOxidizables();
+        registerFuels();
+    }
+
+    public static void registerCompostables() {
+        CompostingChanceRegistry.INSTANCE.add(DEAD_CREEPS, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(ARCHAIC_CREEPS, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(WARPED_VINES, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(RED_HYPHAE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(BROWN_HYPHAE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(ROOT_CREEPS, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(MYCELIUM_HYPHAE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(CRIMSON_HYPHAE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(WARPED_HYPHAE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(OAK_FOLIAGE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(SPRUCE_FOLIAGE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(BIRCH_FOLIAGE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(JUNGLE_FOLIAGE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(ACACIA_FOLIAGE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(DARK_OAK_FOLIAGE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(MANGROVE_FOLIAGE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(CHERRY_FOLIAGE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(AZALEA_FOLIAGE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(FLOWERING_AZALEA_FOLIAGE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(GLOWBERRY_CREEPS, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(BARE_GLOWBERRY_CREEPS, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(SWEET_BERRY_FOLIAGE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(BAMBOO_FOLIAGE, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(GRASS_SHOOTS, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(MOSS_CLUMPS, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(MOSS_GROWTH, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(BEACHED_KELP, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(BEACHED_SEA_GRASS, 0.3f);
+        CompostingChanceRegistry.INSTANCE.add(NETHER_WART_SPROUTS, 0.65f);
+        CompostingChanceRegistry.INSTANCE.add(CRIMSON_VINES, 0.65f);
+        CompostingChanceRegistry.INSTANCE.add(ROSE_CREEPS, 0.65f);
+        CompostingChanceRegistry.INSTANCE.add(ROSE_VINES, 0.65f);
+        CompostingChanceRegistry.INSTANCE.add(WARPED_GROWTHS, 0.65f);
+    }
+
+    public static void registerOxidizables() {
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(VVBlocks.COPPER_PLATING, VVBlocks.EXPOSED_COPPER_PLATING);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(VVBlocks.EXPOSED_COPPER_PLATING, VVBlocks.WEATHERED_COPPER_PLATING);
+        OxidizableBlocksRegistry.registerOxidizableBlockPair(VVBlocks.WEATHERED_COPPER_PLATING, VVBlocks.OXIDIZED_COPPER_PLATING);
+
+        OxidizableBlocksRegistry.registerWaxableBlockPair(VVBlocks.COPPER_PLATING, VVBlocks.WAXED_COPPER_PLATING);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(VVBlocks.EXPOSED_COPPER_PLATING, VVBlocks.WAXED_EXPOSED_COPPER_PLATING);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(VVBlocks.WEATHERED_COPPER_PLATING, VVBlocks.WAXED_WEATHERED_COPPER_PLATING);
+        OxidizableBlocksRegistry.registerWaxableBlockPair(VVBlocks.OXIDIZED_COPPER_PLATING, VVBlocks.WAXED_OXIDIZED_COPPER_PLATING);
+    }
+
+    public static void registerFuels() {
+        FuelRegistry.INSTANCE.add(VVBlocks.DEAD_CREEPS, 100);
+        FuelRegistry.INSTANCE.add(VVBlocks.ARCHAIC_CREEPS, 100);
+        FuelRegistry.INSTANCE.add(VVBlocks.OAK_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.STRIPPED_OAK_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.BIRCH_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.STRIPPED_BIRCH_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.SPRUCE_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.STRIPPED_SPRUCE_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.JUNGLE_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.STRIPPED_JUNGLE_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.DARK_OAK_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.STRIPPED_DARK_OAK_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.ACACIA_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.STRIPPED_ACACIA_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.MANGROVE_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.STRIPPED_MANGROVE_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.CHERRY_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.STRIPPED_CHERRY_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.WARPED_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.STRIPPED_WARPED_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.CRIMSON_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.STRIPPED_CRIMSON_CREEPS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.SHODDY_OAK_PLANKS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.SHODDY_BIRCH_PLANKS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.SHODDY_SPRUCE_PLANKS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.SHODDY_JUNGLE_PLANKS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.SHODDY_ACACIA_PLANKS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.SHODDY_DARK_OAK_PLANKS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.SHODDY_MANGROVE_PLANKS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.SHODDY_CHERRY_PLANKS, 200);
+        FuelRegistry.INSTANCE.add(VVBlocks.COAL_FRAGMENTS, 1600);
     }
 }
