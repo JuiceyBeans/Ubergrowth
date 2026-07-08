@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_hyphae"
+    },
+    {
+      "item": "minecraft:crimson_hyphae"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "veilsandvegetation:crimson_creeps"
+  }
+}

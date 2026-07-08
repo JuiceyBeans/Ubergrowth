@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 8,
-  "ingredient": {
-    "item": "minecraft:copper_ore"
-  },
-  "result": "ubergrowth:copper_ore_fragments"
-}

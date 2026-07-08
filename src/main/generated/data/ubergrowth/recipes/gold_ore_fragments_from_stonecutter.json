@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 8,
-  "ingredient": {
-    "item": "minecraft:gold_ore"
-  },
-  "result": "ubergrowth:gold_ore_fragments"
-}

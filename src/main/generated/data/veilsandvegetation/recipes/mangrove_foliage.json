@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:mangrove_leaves"
+    },
+    {
+      "item": "minecraft:mangrove_leaves"
+    },
+    {
+      "item": "minecraft:mangrove_leaves"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "veilsandvegetation:mangrove_foliage"
+  }
+}

@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "ubergrowth:dirt_smattering",
-    "ubergrowth:mud_smattering",
-    "ubergrowth:clay_smattering",
-    "ubergrowth:gravel_smattering",
-    "ubergrowth:sand_smattering",
-    "ubergrowth:red_sand_smattering",
-    "ubergrowth:rooted_dirt_smattering",
-    "ubergrowth:grass_smattering",
-    "ubergrowth:podzol_smattering",
-    "ubergrowth:soul_soil_smattering",
-    "ubergrowth:soul_sand_smattering"
+    "veilsandvegetation:dirt_smattering",
+    "veilsandvegetation:mud_smattering",
+    "veilsandvegetation:clay_smattering",
+    "veilsandvegetation:gravel_smattering",
+    "veilsandvegetation:sand_smattering",
+    "veilsandvegetation:red_sand_smattering",
+    "veilsandvegetation:rooted_dirt_smattering",
+    "veilsandvegetation:grass_smattering",
+    "veilsandvegetation:podzol_smattering",
+    "veilsandvegetation:soul_soil_smattering",
+    "veilsandvegetation:soul_sand_smattering"
   ]
 }

@@ -21,7 +21,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"ubergrowth" {
+		"veilsandvegetation" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}

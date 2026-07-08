@@ -1,6 +1,0 @@
-{
-  "parent": "ubergrowth:block/ubergrowth_multiface",
-  "textures": {
-    "texture": "ubergrowth:block/mycelium_hyphae"
-  }
-}

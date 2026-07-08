@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:oxidized_copper"
+    },
+    {
+      "item": "minecraft:oxidized_copper"
+    }
+  ],
+  "result": {
+    "count": 16,
+    "item": "veilsandvegetation:oxidized_copper_plating"
+  }
+}

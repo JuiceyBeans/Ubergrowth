@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ore"
+    },
+    {
+      "item": "minecraft:iron_ore"
+    }
+  ],
+  "result": {
+    "count": 16,
+    "item": "veilsandvegetation:iron_ore_fragments"
+  }
+}

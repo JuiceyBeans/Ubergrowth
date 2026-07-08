@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "veilsandvegetation:dead_creeps"
+    },
+    {
+      "item": "veilsandvegetation:dead_creeps"
+    },
+    {
+      "item": "veilsandvegetation:dead_creeps"
+    },
+    {
+      "item": "minecraft:soul_sand"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "veilsandvegetation:archaic_creeps"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:acacia_leaves"
+    },
+    {
+      "item": "minecraft:acacia_leaves"
+    },
+    {
+      "item": "minecraft:acacia_leaves"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "veilsandvegetation:acacia_foliage"
+  }
+}

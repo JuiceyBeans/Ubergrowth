@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:jungle_wood"
+    },
+    {
+      "item": "minecraft:jungle_wood"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "veilsandvegetation:jungle_creeps"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:waxed_exposed_copper"
+    },
+    {
+      "item": "minecraft:waxed_exposed_copper"
+    }
+  ],
+  "result": {
+    "count": 16,
+    "item": "veilsandvegetation:waxed_exposed_copper_plating"
+  }
+}

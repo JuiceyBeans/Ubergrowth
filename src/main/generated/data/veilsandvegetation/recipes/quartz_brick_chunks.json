@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:quartz_bricks"
+    },
+    {
+      "item": "minecraft:quartz_bricks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "veilsandvegetation:quartz_brick_chunks"
+  }
+}

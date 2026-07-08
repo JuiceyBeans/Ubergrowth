@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:soul_soil"
+    },
+    {
+      "item": "minecraft:soul_soil"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "veilsandvegetation:soul_soil_smattering"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:red_nether_bricks"
+    },
+    {
+      "item": "minecraft:red_nether_bricks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "veilsandvegetation:netherwart_brick_chunks"
+  }
+}

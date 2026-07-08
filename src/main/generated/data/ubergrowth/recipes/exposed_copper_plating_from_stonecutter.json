@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 8,
-  "ingredient": {
-    "item": "minecraft:exposed_copper"
-  },
-  "result": "ubergrowth:exposed_copper_plating"
-}

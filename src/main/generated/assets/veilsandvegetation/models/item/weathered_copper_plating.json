@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "veilsandvegetation:block/weathered_copper_plating"
+  }
+}

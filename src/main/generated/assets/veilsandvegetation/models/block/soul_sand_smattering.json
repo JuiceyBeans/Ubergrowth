@@ -1,0 +1,6 @@
+{
+  "parent": "veilsandvegetation:block/vv_multiface",
+  "textures": {
+    "texture": "veilsandvegetation:block/soul_sand_smattering"
+  }
+}

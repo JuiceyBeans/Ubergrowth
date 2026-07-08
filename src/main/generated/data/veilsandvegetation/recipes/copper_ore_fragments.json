@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ore"
+    },
+    {
+      "item": "minecraft:copper_ore"
+    }
+  ],
+  "result": {
+    "count": 16,
+    "item": "veilsandvegetation:copper_ore_fragments"
+  }
+}

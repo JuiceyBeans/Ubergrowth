@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:acacia_wood"
+    },
+    {
+      "item": "minecraft:acacia_wood"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "veilsandvegetation:acacia_creeps"
+  }
+}

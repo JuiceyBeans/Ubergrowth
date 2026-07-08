@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "ubergrowth",
+	"id": "veilsandvegetation",
 	"version": "${version}",
-	"name": "Ubergrowth+",
+	"name": "Veils and Vegetation",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
 		"JuiceyBeans"
@@ -12,23 +12,23 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/ubergrowth/icon.png",
+	"icon": "assets/veilsandvegetation/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.juiceybeans.ubergrowth.Ubergrowth"
+          "com.juiceybeans.veilsandvegetation.VeilsAndVegetation"
 		],
 		"client": [
-			"com.juiceybeans.ubergrowth.client.UbergrowthClient"
+          "com.juiceybeans.veilsandvegetation.client.VeilsAndVegetationClient"
 		],
 		"fabric-datagen": [
-          "com.juiceybeans.ubergrowth.client.datagen.UbergrowthDataGenerators"
+          "com.juiceybeans.veilsandvegetation.client.datagen.VVDataGenerators"
 		]
 	},
 	"mixins": [
-		"ubergrowth.mixins.json",
+		"veilsandvegetation.mixins.json",
 		{
-			"config": "ubergrowth.client.mixins.json",
+			"config": "veilsandvegetation.client.mixins.json",
 			"environment": "client"
 		}
 	],

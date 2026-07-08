@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ore"
+    },
+    {
+      "item": "minecraft:gold_ore"
+    }
+  ],
+  "result": {
+    "count": 16,
+    "item": "veilsandvegetation:gold_ore_fragments"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:weathered_copper"
+    },
+    {
+      "item": "minecraft:weathered_copper"
+    }
+  ],
+  "result": {
+    "count": 16,
+    "item": "veilsandvegetation:weathered_copper_plating"
+  }
+}
